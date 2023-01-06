@@ -13,36 +13,7 @@
     <h2>Спроба зрозуміти як працює операційна система</h2>
     
     <div>
-       nasm <br>
-       --------------------------------------------------------<br>
-; boot.asm<br>
 
-   mov ax, 0x07c0<br>
-   mov ds, ax<br>
- 
-   mov si, msg<br>
-   cld<br>
-ch_loop:lodsb<br>
-   or al, al ; zero=end of str<br>
-   jz hang   ; get out<br>
-   mov ah, 0x0E<br>
-   mov bh, 0<br>
-   int 0x10<br>
-   jmp ch_loop<br>
- 
-hang:<br>
-   jmp hang<br>
- 
-msg   db 'Hello World', 13, 10, 0<br>
-   times 510-($-$$) db 0<br>
-   db 0x55<br>
-   db 0xAA<br>
-----------------------------------------------------------<br>
-B8 C0 07 8E D8 BE 18 00 FC AC 08 C0 74 08 B4 0E<br>
-B7 00 CD 10 EB F3 EB FE 48 65 6C 6C 6F 20 57 6F<br>
-72 6C 64 0D 0A 00 00 00 00 00 ...<br>
-					  55 AA<br>
-===========================================================<br>
     </div>
 </body>
 </html>
