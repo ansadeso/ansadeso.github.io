@@ -3,7 +3,7 @@ h1 {
     color:white;
     text-align: center;
 }
-h2 {
+h2, h3 {
     text-align: center;
 }
 .content {
@@ -22,10 +22,19 @@ h2 {
     background-color: darkkhaki;
 }
 
-.image {
+.imageRepeatEvent {
+    width: 450px;
+}
+
+.imageDownload {
     width: 220px;
     height: 185px;
     background-color: lightskyblue;
+}
+
+.additionalRepeatEvent {
+    width: 150px;
+    text-align: right;
 }
 
 .additional {
