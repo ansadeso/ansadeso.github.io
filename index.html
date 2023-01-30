@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
 </head>
+
 <body onload="loadXMLDoc()">
-    <h1><a href="./index.html">Блог</a> </h1>
-    
-    <h2>Задачі, програми</h2>
-    
-    <div class="content">
-      <ul>
-        <li><a href="./pTasksIndex.html">Задачі</a></li>
-        <li><a href="./p1.html">Програма що працює без 
-          операційної системи</a></li>
-      </ul>
+  <h1><a href="./index.html">Блог</a> </h1>
+
+  <h2>Задачі, програми</h2>
+
+  <div class="content">
+    <div class="blocks">
+      <div class="tasks" onclick="location.href='https://ansadeso.github.io/pTasksIndex.html';">Задачі</div>
+      <div class="programs" onclick="location.href='https://ansadeso.github.io/p1.html';">Програма що працює без
+        операційної системи</div>
+    </div>
+ 
+
+
+  </div>
+  <style>
+    .blocks{
+      display: flex;
+    }
+    div.tasks {
+      height: 100px;
+      width: 200px;
+      outline: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: darkkhaki;
+      margin-right: 20px;
+    }
+
+    div.tasks:hover {
+      outline: 2px solid black;
       
+    }
+    div.programs {
+      height: 100px;
+      width: 200px;
+      outline: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: darkturquoise;
+    }
+
+    div.programs:hover {
+      outline: 2px solid black;
       
-   </div>
-   <script src="script.js"></script>
+    }
+  </style>
+  <script src="script.js"></script>
 </body>
+
 </html>
