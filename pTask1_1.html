@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
     <title>Document</title>
+    <script>
+        MathJax = {
+          loader: {load: ['input/asciimath', 'output/chtml']}
+        }
+        </script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+        </script>
 </head>
 <body>
     <h1><a href="./index.html">Блог</a> </h1>
     
     <h2>Задача 1.1</h2>
-    
+   
     <div class="content">
      <p>Катер, рухається вниз по річці, обігнав пліт в пункті А. 
-        Через &#964; = 60 хв після цього він розвернувся назад і після 
-        цього зустрів пліт на відстані l=6,0 км нижче пункта А. 
+        Через `\tau` = 60 хв після цього він розвернувся назад і після 
+        цього зустрів пліт на відстані `l`=6,0 км нижче пункта А. 
         Найти швидкість течії, якщо при русі в обох напрямках 
         двигун катера працював однаково.
      </p>
@@ -23,16 +33,30 @@
         <div class="find">
             <div class="dano">
                 <div style="text-align: center;">Дано:</div>
-                &#964; = 60 хв. <br>
-                l = 6 000 м. <br>
+                `\tau` = 60 хв. <br>
+                `l` = 6 000 м. <br>
             </div>
             V<sub>т</sub> - ?
         </div>
-        <div class="soulution"></div>
-        <div class="picture"></div>
+        <div class="soulution">
+            <div style="text-align: center;">Розв`язання</div>
+            `V_п = V_т` <br>
+            ` V_т = (l)/(\tau + t_(к2)) ` <br>
+            `S_1 = l + S_2` <br>
+            `S_1 = (V_(k0)+V_т)\tau` <br>
+            `l = V_т(\tau+t_(k2))` <br>
+            `S_2 = (V_(k0) - V_т)t_(k2)` <br>
+            `(V_(k0)+V_т)\tau = V_т(\tau+t_(k2)) + (V_(k0) - V_т)t_(k2)` <br>
+            `V_(k0)\tau+V_т\tau = V_т\tau + V_тt_(k2) + V_(k0)t_(k2) - V_тt_(k2)` <br>
+            `V_(k0)\tau = V_(k0)t_(k2)` <br>
+            `\tau =  t_(k2)` <br>
+            ` V_т = (l)/(\tau + \tau) =  (l)/(2\tau) = 6/2 =` 3 км/год. <br>
+
+        </div>
+        <div class="picture"><img src="./Picture/picture_1_1.jpg" alt="" srcset=""></div>
       </div>
       
    </div>
-  
+   
 </body>
 </html>
