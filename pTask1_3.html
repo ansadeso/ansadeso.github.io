@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+    <script>
+        MathJax = {
+          loader: {load: ['input/asciimath', 'output/chtml']}
+        }
+        </script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+        </script>
 </head>
 <body>
     <h1><a href="./index.html">Блог</a> </h1>
@@ -13,12 +22,56 @@
     <h2>Задача 1.3</h2>
     
     <div class="content">
-     <p>Точка пройшла половину шляху зі швидкістю V<sub>0</sub>. На решті 
-        шляху вона половину часу рухалася зі швидкістю V<sub>1</sub>, а 
-        останю частину шляху пройшла зі швидкістю V<sub>2</sub>. Найти середню, 
+     <p>Точка пройшла половину шляху зі швидкістю `V_0`. На решті 
+        шляху вона половину часу рухалася зі швидкістю `V_1`, а 
+        останю частину шляху пройшла зі швидкістю `V_2`. Найти середню, 
         за весь час руху, швидкість точки.
      </p>
-      
+     <div class="item">
+        <div class="find">
+            <div class="dano">
+                <div style="text-align: center;">Дано:</div>
+                `V_0` <br>
+                `V_1` <br>
+                `V_2` <br>
+                `S_0 = S_1 + S_2` <br>
+                `S/2 = S_1 + S_2` <br>
+                `t_1 = t_2` <br>
+            </div>
+            `\ltV\gt` - ?
+        </div>
+        <div class="soulution">
+            <div style="text-align: center;">Розв`язання</div>
+            <p>`S=Vt`</p>
+            <p>`S=S_0+S_1+S_2`</p>
+            <p>`S=2S_1 + 2S_2`</p>
+            <p>`2S_1 + 2S_2 = S_0 + S_1 + S_2`</p>
+            <p>`2V_1t_1 + 2V_2t_2 = V_0t_0 + V_1t_1 + V_2t_2`</p>
+            <p>`V_1t_1 + V_2t_2 = V_0t_0`</p>
+            <p>`t_0 = (V_1t_1 + V_2t_2)/V_0`</p>
+            
+        </div>
+        <div class="picture"><img src="./Picture/picture_1_3.jpg" alt="" srcset=""></div>
+      </div>
+      <div class="solution_second">
+        <br>
+        <p>`t_0 = (t_1(V_1 + V_2))/V_0` <label><b>(1)</b></label></p>
+        <p>`S_1 + S_2 = S/2`</p>
+        <p>`V_1t_1 + V_2t_2 = (\ltV\gt(t_0 + t_1 + t_2))/2`</p>
+        <p>`t_1(V_1 + V_2) = (\ltV\gt(t_0 + 2t_1))/2`</p>
+        <p>`2t_1(V_1 + V_2) = \ltV\gt(t_0 + 2t_1)`</p>
+        <p>`\ltV\gt = (2t_1(V_1 + V_2))/(t_0 + 2t_1)` <label><b>(2)</b></label></p>
+        <p>В друге рівняння підставляємо перше.</p>
+        <p>`\ltV\gt = (2t_1(V_1 + V_2))/((t_1(V_1 + V_2))/V_0 + (2t_1V_0)/V_0)`</p>
+        <p>`\ltV\gt = (2t_1(V_1 + V_2))/((t_1(V_1 + V_2)+2t_1V_0)/V_0)`</p>
+        <p>`\ltV\gt = (2t_1V_0(V_1 + V_2))/(t_1(V_1 + V_2)+2t_1V_0)`</p>
+        <p>`\ltV\gt = (2t_1V_0(V_1 + V_2))/(t_1(V_1 + V_2 + 2V_0))`</p>
+        <p>`\ltV\gt = (2V_0(V_1 + V_2))/(2V_0 + V_1 + V_2)`</p>
+        <p> <b>Відповідь:</b>  `\ltV\gt = (2V_0(V_1 + V_2))/(2V_0 + V_1 + V_2)`</p>
+         
+         
+        
+      </div>
       
    </div>
   

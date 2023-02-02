@@ -92,3 +92,17 @@ h2, h3 {
     height: 300px;
     background-color: lightyellow;
 }
+
+.solution_second {
+    width: 600px;
+    height: 800px;
+    background-color: lightskyblue;
+}
+
+p {
+    text-indent: 20px;   
+  }
+label {
+    color: violet;
+}
+
