@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script>
+        MathJax = {
+          loader: {load: ['input/asciimath', 'output/chtml']}
+        
+        }
+
+        </script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+        </script>
+</head>
+<body>
+    <h1><a href="./index.html">Блог</a> </h1>
+    
+    <h2>Задача 1.6</h2>
+
+
+    <div class="content">
+     <p>Корабель рухається по екватору на схід зі швидкістю `V_0=30 (км)/(год)`. 
+      З південного-сходу під кутом `\varphi = 60^0` до екватора дує вітер зі 
+      швидкістю `V=15 (км)/(год)`. Знайти швидкість `V^'` вітру відносно 
+      корабля і кут `\varphi^'` між екватором і напрямком вітру в системі відліку, 
+      звязаною з кораблем. 
+
+     </p>
+     <div class="item">
+        <div class="find">
+            <div class="dano">
+                <div style="text-align: center;">Дано:</div>
+                `V_0=30 (км)/(год)` <br>
+                `V=15 (км)/(год)` <br>
+                `\varphi = 60^0` <br>
+                
+            </div>
+            `V^'` - ? `\varphi^'` - ?
+        </div>
+        <div class="soulution">
+            <div style="text-align: center;">Розв`язання 1</div>
+            <p>Нас цікавить швидкість вітру, тож розглянемо, що вітер дує зі 
+              швидкістю 30 `(км)/(год)` а корабель стоїть на місці.</p>
+            <p>Тоді отримаємо малюнок паралелограма.</p>
+            <p>Знайдемо модуль вектор `\vec(AD)` за теоремою косинусів зі знаком `+` перед 
+              `cos\varphi`</p>
+            
+        
+            
+            
+        </div>
+        <div class="picture"><img src="./Picture/picture_1_6.jpg" alt="" srcset=""></div>
+      </div>
+      <div class="solution_second" style="height: 2000px;">
+        <br>
+        <p>`AD^2 = AC^2+AB^2+ 2*AB*AC*cos\varphi`</p>
+        <p>`AD = \sqrt(AC^2+AB^2+ 2*AB*AC*cos\varphi)`</p>
+        <p>`AD = \sqrt(15^2+30^2+ 2*30*15*0,5)`</p>
+        <p>`AD = \sqrt(225+900+ 450)`</p>
+        <p>`AD = \sqrt(1575)`</p>
+        <p>`AD ` &#x2248; ` 39,68`</p>
+        <p>`AD ` &#x2248; ` 40`</p>
+        <p>`V^' ` &#x2248; ` 40`</p>
+        <p>Кут `\varphi^'` знайдемо за теоремою косинусів зі знаком `-` перед `cos\varphi^'`. 
+          Розглянемо трикутник `BDA`. `\angle BAD` = `\varphi^'` 
+        </p>
+        <p>`BD^2=BA^2 + AD^2 - 2*BA*AD*cos\varphi^'`</p>
+        <p>`cos\varphi^'= (BA^2+AD^2-BD^2)/(2*BA*AD)`</p>
+        <p>`cos\varphi^'= (30^2+40^2-15^2)/(2*30*40)`</p>
+        <p>`cos\varphi^'= (2275)/(2400)=0,94791`</p>
+        <p>`\varphi^'` &#x2248; `19`</p>
+        <p> <b>Відповідь:</b>`V^' ` &#x2248; ` 40`, `\varphi^'` &#x2248; `19`  </p>
+         <div style="text-align: center;">Розв`язання 2</div>
+         <div><img src="./Picture/picture_1_6v2.jpg" alt="" srcset=""></div>
+         <p>Для паралелограма `ABCD` введемо систему координат. Нехай сторона 
+          `AB` лежить на осі Оx, а координата точки А(60;0), B(30;0).
+         </p>
+         <p>Знайдемо координати точок C і D.</p>
+         <p>`cos\varphi=(EA)/(AC)`; `EA= AC*cos\varphi= 15*cos60=15*0,5=7,5 (км)/(год)`.</p>
+         <p>`sin\varphi=(EC)/(AC)`; `EC= AC*sin\varphi= 15*sin60=15*0,866` &#x2248; `13 (км)/(год)`.</p>
+        <p>Отже для точки `C(A_x-EA;A_y+EC)`</p>
+        <p>`C(60-7,5; 0+13)`</p>
+        <p>`C(52,5; 13)`</p>
+        <p>Отже для точки `D(B_x-EA;B_y+EC)`</p>
+        <p>`D(30-7,5; 0+13)`</p>
+        <p>`D(22,5; 13)`</p>
+        <p>Отримали: `А(60;0), B(30;0), C(52,5; 13), D(22,5; 13)`</p>
+        <p>`\vec(AB){B_x-A_x; B_y-A_y}; \vec(AB){30-60; 0 - 0}; \vec(AB){-30; 0};`</p>
+        <p>`\vec(AD){D_x-A_x; D_y-A_y}; \vec(AD){22,5-60; 13 - 0}; \vec(AD){-37,5; 13};`</p>
+        <p>Тоді модуль вектора `\vec(AD)` буде `\vec(\abs(AD))=\sqrt(AD_x^2+AD_y^2)=\sqrt(37,5^2+13^2)` &#x2248; `40`</p>
+         <p>Розглянемо трикутник `ABD` `\angleDAB=\varphi^'`</p>
+         <p>`cos\varphi^'=(\vec(AB)*\vec(AD))/(\vec(\abs(AB))*\vec(\abs(AD)))=(1125+0)/(30*39.68)=1125/(1190,4)=0,945`</p>
+         <p>`\varphi^'=arccos0,945` &#x2248; `19`</p>
+         <p> <b>Відповідь:</b>`V^' ` &#x2248; ` 40`, `\varphi^'` &#x2248; `19`  </p>
+      </div>
+      
+   </div>
+  
+</body>
+</html>
