@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script>
+        MathJax = {
+          loader: {load: ['input/asciimath', 'output/chtml']}
+        }
+        </script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+        </script>
+</head>
+<body>
+    <h1><a href="./index.html">Блог</a> </h1>
+    
+    <h2>Задача 1.8</h2>
+   
+    <div class="content">
+     <p>Від бакена, який знаходиться по середині широкої річки, відпливло два човни, 
+      A і B. Обидва човна почали рухатися по взаємно перпендикулярним прямим: човен A - 
+      вздовж річки, а човен B - поперек. Відпливши на однакову відстань від бакена, 
+      човни повернулися назад. Знайти відношення часу, руху човнів `\tau_A/\tau_B`, 
+      якщо швидкість кожного човна відносно води в `\eta = 1,2` разів більше швидкості 
+      течії.
+     </p>
+     <div class="item">
+        <div class="find">
+            <div class="dano" style="height: 255px;">
+                <div style="text-align: center;">Дано:</div>
+                `S_1 = S_2 = S` <br>
+                `\eta = V^'/V_0 = 1,2` <br>
+                
+            </div>
+            `\tau_A/\tau_B` - ?
+        </div>
+        <div class="soulution">
+            <div style="text-align: center;">Розв`язання</div>
+          
+            <p>`AB = S_2`</p>
+            <p>`AC = S_1`</p>
+            <p>`t_B = (2S_2)/V_B = (2S_2)/(sqrt(V^('2)-V_0^2))`</p>
+            <p>`t_B = (2S)/(sqrt(V^('2)-V_0^2))`</p>
+            <p>`t_A = S_1/(V^' + V_0) + S_1/(V^'- V_0)`</p>
+            
+            
+      
+            
+            
+            
+        </div>
+        <div class="picture"><img src="./Picture/picture_1_8.jpg" alt="" srcset=""></div>
+      </div>
+      <div class="solution_second" style="height: 1000px;">
+        <br>
+        <p>`t_A = S/(V^' + V_0) + S/(V^'- V_0)`</p>
+        <p>`t_A = (S(V^'- V_0))/((V^' + V_0)(V^'- V_0)) + (S(V^' + V_0))/((V^'- V_0)(V^' + V_0))`</p>
+        <p>`t_A = (S(V^'- V_0 + V^' + V_0))/(V^('2)- V_0^2) `</p>
+        <p>`t_A = (2SV^')/(V^('2)- V_0^2) `</p>
+        <p>`\tau_A/\tau_B = t_A/t_B = (2SV^')/(V^('2)- V_0^2) * (sqrt(V^('2)-V_0^2))/(2S)`</p>
+        <p>`\tau_A/\tau_B = (V^')/(sqrt(V^('2)-V_0^2))`</p>
+        <p>`\tau_A/\tau_B = (V^')/(V^'sqrt(1-V_0^2/V^('2)))`</p>
+        <p>`\tau_A/\tau_B = (1)/(sqrt(1-V_0^2/V^('2)))`</p>
+        <p>`\tau_A/\tau_B = (1)/(sqrt(1-(V_0/V^')^2))`</p>
+        <p>`1/\eta = V_0/V^'`</p>
+        <p>`\tau_A/\tau_B = (1)/(sqrt(1-(1/\eta)^2))`</p>
+        <p>`\tau_A/\tau_B = (1)/(sqrt(1-1/\eta^2))`</p>
+        <p>`\tau_A/\tau_B = (\eta)/(sqrt(\eta^2-1))`</p>
+        <p>`\tau_A/\tau_B = (1,2)/(sqrt(\1,44-1))` &#x2248; ` 1,8`</p>
+
+        
+        <p> <b>Відповідь:</b>  `\tau_A/\tau_B = (\eta)/(sqrt(\eta^2-1))` &#x2248; ` 1,8`.</p>
+         
+         
+        
+      </div>
+      
+   </div>
+  
+</body>
+</html>
