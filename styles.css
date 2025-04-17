@@ -32,6 +32,12 @@ h2, h3 {
     background-color: #ccc;
     text-align: left;
 }
+.fotosPs{
+    margin: 0 auto;
+    width: 1300px;
+    background-color: #0e0cb1;
+    text-align: left;
+}
 
 .item {
     display: flex;
