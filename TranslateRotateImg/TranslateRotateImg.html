@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="TranslateRotateImg.css">
+    
+</head>
+<body>
+    
+    <div>TranslateRotateImg</div>
+    <div><button type="button" onclick="RotateOnAxsisX_Plus()">RotateOnAxsisX_Plus</button></div>
+    <div class="contentBlock">
+            <div class="contentSurface">
+                <div id="contentTwoImage" style="width: fit-content; margin-left: 300px; transform: perspective(500px) translateZ(-100px) RotateX(0deg);">
+                    <div style="height: 250px;"><img src="powerSuply.jpg" id="imgId_one" style="width: 250px; height: 250px;" class="img_1" alt=""></div>
+                    <div style="height: 250px;"><img src="powerSuply.jpg" id="imgId_two" style="width: 250px; height: 250px;" class="img_2"  alt=""></div>
+                </div>
+                <div class="block_1"></div>
+                <div class="block_2"></div>
+        
+            </div>
+    </div>
+    <style>
+        .contentBlock{
+            -webkit-perspective: 500px; 
+            perspective: 500px; 
+            
+        }
+        .contentSurface {
+           /* width: 700px;
+            height: 700px;*/
+            transform-style: preserve-3d;
+        }
+        .img_1 {
+            /*margin-left: 100px;*/
+        }
+        .img_2 {
+            
+           /* margin-left: 100px;*/
+           /* transform: perspective(500px) translateZ(0px) rotateX(0deg);*/
+        }
+        .block_1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .block_2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transform: translateZ(-100px) ;
+        }
+    </style>
+    
+    <script src="TranslateRotateImg.js"></script>
+</body>
+</html>
